@@ -1,0 +1,57 @@
+@media (-moz-pref("user.sidebar")) {
+
+    /* Remove dotted active border */
+    :root {
+        --default-focusring: none !important;
+    }
+
+    /* Change panel color */
+    .sidebar-panel {
+        background-color: var(--zen-themed-toolbar-bg) !important;
+    }
+
+    /* Change 'Synced Tabs' color */
+    html body div.content-container {
+        background-color: #171717 !important;
+    }
+
+    /* Design search box */
+    search-textbox {
+        appearance: none !important;
+        background-color: transparent !important;
+        border: 1px solid var(--zen-colors-border) !important;
+        padding: 0.5rem !important;
+        border-radius: 5px !important;
+    }
+
+    /* Remove separator */
+    #sidebar-box #sidebar-header {
+        border-bottom: none !important;
+    }
+
+    /* Floating sidebar */
+    #sidebar-box {
+        background-color: var(--zen-themed-toolbar-bg) !important;
+        border: 1px solid var(--zen-colors-border) !important;
+        padding: var(--zen-toolbox-padding) !important;
+        position: fixed;
+        z-index: 1;
+        height: 80vh !important;
+        width: 20em !important;
+        top: 10vh !important;
+        right: 0.6vw !important;
+        animation: sidebar 0.2s ease-in-out !important;
+    }
+
+    @keyframes sidebar {
+        0% {
+            opacity: 0;
+            transform: translateX(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

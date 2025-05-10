@@ -1,0 +1,195 @@
+@media (-moz-bool-pref: "user.extension-menu") {
+
+    @media (-moz-bool-pref: "user.extension-menu.grid-layout") {
+
+        /* Fit width */
+        #unified-extensions-view {
+            width: 100% !important;
+        }
+
+        /* Hide top section */
+        #unified-extensions-view box.panel-header,
+        #unified-extensions-description,
+        #unified-extensions-messages-container {
+            display: none !important;
+        }
+
+        /* Hides name */
+        .unified-extensions-item-contents {
+            display: none !important;
+        }
+
+        /* Hides descripton */
+        .unified-extensions-item-message-deck {
+            display: none !important;
+        }
+
+        /* Hide settings icon */
+        .unified-extensions-item-menu-button {
+            display: none !important;
+        }
+
+        /* Hide separator */
+        panel toolbarseparator {
+            display: none !important;
+        }
+
+        /* Hide Manage Extension */
+        #unified-extensions-manage-extensions {
+            display: none !important;
+        }
+
+        /* Grid layout */
+        #unified-extensions-area,
+        .unified-extensions-list {
+            display: grid !important;
+            grid-template-columns: repeat(var(--extensions-in-row), calc(var(--uei-icon-size) + 32px));
+            justify-items: center !important;
+        }
+
+        #unified-extensions-view {
+            --extensions-in-row: 4;
+        }
+
+        .unified-extensions-item-action-button {
+            padding: 10px !important;
+        }
+
+        .toolbarbutton-badge-stack,
+        .unified-extensions-item-icon {
+            margin: 0 !important;
+        }
+    }
+
+
+    @media not (-moz-bool-pref: "user.extension-menu.grid-layout") {
+
+        /* Hide extension name in URL bar */
+        #urlbar #identity-box.extensionPage #identity-icon-label {
+            display: none !important;
+        }
+
+        /*Reduces the unnecessary height*/
+        .toolbar-menupopup :is(menu, menuitem),
+        .subview-subheader,
+        panelview .toolbarbutton-1,
+        .subviewbutton,
+        .widget-overflow-list .toolbarbutton-1 {
+            max-height: 2.5em !important;
+        }
+
+        /* Fixed width */
+        #unified-extensions-view {
+            width: var(--menu-panel-width) !important;
+        }
+
+        /* Hide top section */
+        #unified-extensions-view box.panel-header,
+        #unified-extensions-description,
+        #unified-extensions-messages-container {
+            display: none !important;
+        }
+
+        /*Hides the unnecessary text*/
+        .unified-extensions-item-message-deck>label {
+            display: none !important;
+        }
+
+        /* Hide settings icon */
+        .unified-extensions-item-menu-button {
+            display: none !important;
+        }
+
+        /* Reduce padding */
+        panelview .unified-extensions-item-action-button {
+            padding-inline: 10px !important;
+            padding-block: 5px !important;
+        }
+
+        #unified-extensions-panel .unified-extensions-item {
+            margin-block: 1px !important;
+        }
+
+        #unified-extensions-manage-extensions {
+            padding-inline: 10px !important;
+        }
+    }
+
+
+    /* Pinned extensions */
+    @media (-moz-bool-pref: "user.extension-menu.pinned") {
+        #TabsToolbar-customization-target {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            gap: 3px !important;
+            justify-content: space-between !important;
+            /* height: calc(100% - 37px) !important; */
+
+            #tabbrowser-tabs {
+                min-width: 100% !important;
+                contain: inline-size !important;
+            }
+
+            .unified-extensions-item {
+                margin-inline: 2px !important;
+                border-bottom: 0px !important;
+                padding: 0px !important;
+                height: 32px !important;
+                width: 32px !important;
+                margin-bottom: 2px !important;
+                flex-grow: 1 !important;
+                order: -1 !important;
+            }
+
+            toolbarbutton:not([id="tabs-newtab-button"]) {
+                height: 32px !important;
+                width: 32px !important;
+                flex-grow: 1 !important;
+                padding: 0px !important;
+
+                toolbarbutton,
+                stack {
+                    --toolbarbutton-active-background: transparent !important;
+                    --toolbarbutton-hover-background: transparent !important;
+                }
+
+                .toolbarbutton-badge {
+                    display: none !important;
+                }
+
+                .toolbarbutton-text {
+                    display: none !important;
+                }
+            }
+
+            >toolbarbutton:not([id="tabs-newtab-button"]),
+            >toolbaritem {
+                background-color: var(--zen-toolbar-element-bg) !important;
+            }
+
+            >toolbarbutton:not([id="tabs-newtab-button"]):hover,
+            >toolbaritem:hover {
+                background-color: var(--tab-selected-bgcolor) !important;
+            }
+
+
+            >toolbarbutton:not([id="tabs-newtab-button"]):is([open], [checked]),
+            >toolbaritem:has(toolbarbutton:is([open], [checked])) {
+                background-color: var(--tab-selected-bgcolor) !important;
+            }
+
+            >toolbarbutton:not([id="tabs-newtab-button"]) {
+                margin-inline: 2px !important;
+                margin-bottom: 2px !important;
+                order: -1 !important;
+            }
+
+            #zen-profile-button {
+                .toolbarbutton-icon {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

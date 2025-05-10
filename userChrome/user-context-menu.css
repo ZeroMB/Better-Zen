@@ -1,0 +1,118 @@
+@media (-moz-pref("user.context-menu")) {
+
+    #tabContextMenu:has(#context_duplicateTab:not([hidden])
+    ):has(:is(#context_zen-add-essential, #context_zen-remove-essential):not([hidden])
+    ):has(:is(#context_pinTab, #context_unpinTab, #context_bookmarkTab):not([hidden])) {
+        :nth-child(1 of menuseparator) {
+            display: flex !important;
+            visibility: visible !important;
+            order: 1 !important;
+        }
+
+        #context_duplicateTab,
+        :is(#context_zen-add-essential, #context_zen-remove-essential),
+        :is(#context_pinTab, #context_unpinTab),
+        #context_bookmarkTab {
+            order: -999 !important;
+            --height: 42px;
+            width: 25% !important;
+            margin-left: 75% !important;
+            height: var(--height) !important;
+            background-position: center !important;
+
+            .menu-text {
+                display: none !important;
+            }
+        }
+
+        #context_zen-remove-essential {
+            margin-left: 37.5% !important;
+            margin-bottom: calc(0px - var(--height)) !important;
+        }
+
+        #context_zen-add-essential {
+            margin-left: 50% !important;
+            margin-bottom: calc(0px - var(--height)) !important;
+        }
+
+        :is(#context_pinTab, #context_unpinTab) {
+            margin-left: 25% !important;
+            margin-bottom: calc(0px - var(--height)) !important;
+        }
+
+        #context_bookmarkTab {
+            margin-left: 0% !important;
+            margin-top: calc(0px - var(--height)) !important;
+        }
+    }
+
+    /* Fixed width */
+    #tabContextMenu {
+        width: 280px !important;
+    }
+
+    menuseparator {
+
+        /* Hide first separator */
+        &:first-of-type {
+            display: none !important;
+        }
+
+        /* Reduce separator opacity */
+        &::before {
+            opacity: 0.3;
+        }
+    }
+
+
+    /* Hide Container icons */
+    #new-tab-button-popup,
+    #context_reopenInContainer,
+    #context-openlinkinusercontext-popup,
+    .new-tab-popup {
+        .menu-iconic-left {
+            display: none !important;
+        }
+
+        .menu-iconic-text {
+            padding: 0 !important;
+        }
+
+        menuseparator:before {
+            border: none !important;
+        }
+
+        menuseparator {
+            padding: 0 !important;
+        }
+
+        menuitem[label="No Container"] {
+            padding-left: 5px !important;
+            order: 1 !important;
+        }
+
+        menuitem[label="Facebook"],
+        menuitem[label="Manage containers"] {
+            display: none !important;
+        }
+    }
+    
+    .new-tab-popup {
+        .menu-iconic-text {
+            margin-left: -8px !important;
+        }
+    }
+    
+    
+    /* Hide context menu separator */
+    #context_selectAllTabs + menuseparator::before,
+    #context_ungroupTab + menuseparator::before {
+        display: none !important;
+    }
+
+    /* Remove context menu separator gap */
+    #context_selectAllTabs + menuseparator,
+    #context_ungroupTab + menuseparator {
+        padding-block: 0.5px !important;
+    }
+}

@@ -1,0 +1,40 @@
+@media (-moz-pref("user.floating-urlbar")) {
+
+    /* Slide-up animation */
+    #urlbar[open] {
+        animation: slide-up 0.2s ease-out !important;
+    }
+
+    @keyframes slide-up {
+        0% {
+            transform: translateX(-50%) translateY(3%);
+        }
+
+        100% {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+
+    /* Background Blur */
+    @media not (-moz-pref("user.floating-urlbar.disable-blur")) {
+        @media (-moz-pref("user.floating-urlbar.blur-browser-container-only")) {
+            #browser:has(#urlbar[open]) .browserContainer {
+                pointer-events: none !important;
+                filter: blur(3px) brightness(70%) !important;
+                transition: all 0.2s ease-in-out !important;
+            }
+        }
+
+        @media not (-moz-pref("user.floating-urlbar.blur-browser-container-only")) {
+            #zen-main-app-wrapper:has(#urlbar[open][zen-floating-urlbar="true"]) #browser {
+                pointer-events: none !important;
+                filter: blur(3px) brightness(70%) !important;
+                transition: all 0.2s ease-in-out !important;
+            }
+
+            #zen-main-app-wrapper:has(#urlbar[open][zen-floating-urlbar="true"]) #urlbar {
+                pointer-events: auto !important;
+            }
+        }
+    }
+}

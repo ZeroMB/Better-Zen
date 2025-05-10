@@ -1,0 +1,176 @@
+/***
+    Import
+***/
+
+@import url("userChrome/user-test.css");
+@import url("userChrome/user-floating-urlbar.css");
+@import url("userChrome/user-extension-menu.css");
+@import url("userChrome/user-context-menu.css");
+@import url("userChrome/user-sidebar.css");
+@import url("userChrome/user-findbar.css");
+@import url("userChrome/Audio-Indicator/user-audio-indicator.css");
+
+
+/***
+    Hide Tabs Close Button
+***/
+@media (-moz-pref("user.hide-tabs-close-button")) {
+
+    #vertical-pinned-tabs-container .tab-close-button,
+    #tabbrowser-tabs .tabbrowser-tab:is([pinned]):is([visuallyselected]):not(:hover) .tab-reset-button,
+    #tabbrowser-tabs .tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover) .tab-close-button {
+        display: none !important;
+    }
+}
+
+/***
+    Hide Link Status
+***/
+@media (-moz-pref("user.hide-link-status")) {
+    #statuspanel {
+        display: none !important;
+    }
+}
+
+/***
+    Hide Scroll Bar
+***/
+@media (-moz-pref("user.hide-scroll-bar")) {
+    * {
+        scrollbar-width: none !important;
+    }
+}
+
+/***
+    Hide Split Highlight
+***/
+@media (-moz-pref("user.hide-split-highlight")) {
+    #tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
+        outline: var(--zen-colors-border) !important;
+    }
+}
+
+/***
+    Minimal border color
+***/
+@media (-moz-pref("user.minimal-border-color")) {
+    :root {
+        --zen-colors-border: #393a3e !important;
+    }
+}
+
+/***
+    Hide 'Open All in Tabs' in Bookmarks
+***/
+@media (-moz-pref("user.hide-Open-All-in-Tabs-in-bookmarks")) {
+
+    .openintabs-menuitem,
+    .bookmarks-actions-menuseparator {
+        display: none !important;
+    }
+}
+
+/***
+    Bleeding Corners Issue Fixed
+***/
+@media (-moz-pref("user.bleeding-corners-issue-fixed")) {
+    .browserContainer {
+        clip-path: inset(0 round var(--zen-native-inner-radius));
+    }
+}
+
+/***
+    Hide 'Star icons' in suggestions
+***/
+@media (-moz-pref("user.hide-star-icon-in-url-suggestions")) {
+    .urlbarView-row[type="bookmark"] .urlbarView-type-icon {
+        display: none !important;
+    }
+}
+
+/***
+    Hide "Search with Google" suggestion
+***/
+@media (-moz-pref("user.hide-search-with-google-suggestion")) {
+    .urlbarView-row[type="search_engine"] {
+        display: none !important;
+    }
+}
+
+/***
+    Hide Permission Icon in URL
+***/
+@media (-moz-pref("user.hide-url-permission-icon")) {
+    #permissions-granted-icon {
+        display: none !important;
+    }
+
+    #identity-permission-box {
+        padding-left: 0 !important;
+        margin-left: -5px !important;
+    }
+}
+
+/***
+    Hide Container Icon in URL
+***/
+@media (-moz-pref("user.hide-url-container-icon")) {
+    #userContext-icons {
+        display: none !important;
+    }
+}
+
+/***
+    Hide Bookmark Icon in URL
+***/
+@media (-moz-pref("user.hide-url-bookmark-icon")) {
+    #star-button-box {
+        display: none !important;
+    }
+}
+
+/***
+    Hide PLP Icon in URL
+***/
+@media (-moz-pref("user.hide-url-plp-icon")) {
+    #picture-in-picture-button {
+        display: none !important;
+    }
+}
+
+/***
+    Add Essentials Separator
+***/
+@media (-moz-pref("user.add-essentials-separator")) {
+    .zen-essentials-container::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        width: 96%;
+        height: 1px;
+        background: light-dark(rgba(1, 1, 1, 0.075), rgba(255, 255, 255, 0.1));
+    }
+
+    .zen-essentials-container {
+        padding-bottom: 8px !important;
+    }
+}
+
+/***
+    Replace Menu Icon to Zen Icon
+***/
+@media (-moz-pref("user.zen-menu-button")) {
+    #PanelUI-menu-button {
+        list-style-image: url(chrome://branding/content/icon64.png) !important;
+    }
+}
+
+/***
+    Remove Pinned Separator
+***/
+@media (-moz-pref("user.remove-pinned-separator")) {
+    .vertical-pinned-tabs-container-separator {
+        display: none !important;
+    }
+}
