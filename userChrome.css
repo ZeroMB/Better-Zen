@@ -9,6 +9,7 @@
 @import url("userChrome/user-sidebar.css");
 @import url("userChrome/user-findbar.css");
 @import url("userChrome/Audio-Indicator/user-audio-indicator.css");
+@import url("userChrome/Workspace/user-workspace.css");
 
 
 /***
@@ -139,6 +140,64 @@
 }
 
 /***
+    Floating Toolbar
+***/
+@media (-moz-pref("user.floating-toolbar")) {
+    #zen-appcontent-wrapper {
+        position: relative;
+    }
+
+    #zen-appcontent-navbar-container {
+        position: absolute;
+        width: 100% !important;
+        backdrop-filter: blur(100px) !important;
+        background: var(--zen-main-browser-background) !important;
+    }
+
+    #zen-tabbox-wrapper {
+        padding-top: 8px;
+    }
+}
+
+/***
+    Remove Container Border
+***/
+@media (-moz-pref("user.borderless-container")) {
+    #zen-appcontent-wrapper {
+        position: relative;
+    }
+
+    #zen-appcontent-navbar-container {
+        position: absolute;
+        width: 100% !important;
+        backdrop-filter: blur(100px) !important;
+        background: var(--zen-main-browser-background) !important;
+    }
+
+    #zen-tabbox-wrapper {
+        margin: 0 !important;
+    }
+
+    .browserSidebarContainer {
+        border-radius: 0px !important;
+        box-shadow: none !important;
+    }
+}
+
+/***
+    Hide Workspace Indicator
+***/
+@media (-moz-pref("user.hide-workspace-indicator")) {
+    #zen-current-workspace-indicator-container {
+        display: none !important;
+    }
+
+    .zen-workspace-pinned-tabs-section {
+        padding-top: 7px !important;
+    }
+}
+
+/***
     Add Essentials Separator
 ***/
 @media (-moz-pref("user.add-essentials-separator")) {
@@ -153,7 +212,7 @@
     }
 
     .zen-essentials-container {
-        padding-bottom: 8px !important;
+        padding-bottom: 9px !important;
     }
 }
 

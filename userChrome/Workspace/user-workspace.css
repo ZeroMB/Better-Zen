@@ -1,0 +1,91 @@
+/***
+NOTE:
+    You need to change the workspace ID in every code, the variable is an example of the workspace ID.
+***/
+
+@media (-moz-pref("user.workspace-custom-icons")) {
+    :root {
+        /* Workspace 1 */
+        --ws1-id: "{dbce79d2-1247-42e3-9715-a7538ed9dc01}";
+        --ws1-image: url("home.svg");
+        --ws1-size: 15px;
+        --ws1-indicator-size: 14px;
+
+        /* Workspace 2 */
+        --ws2-id: "{d31ff3d0-7231-4b50-9041-4601e0432874}";
+        --ws2-image: url("code.svg");
+        --ws2-size: 16px;
+        --ws2-indicator-size: 15px;
+
+        /* Workspace 3 */
+        --ws3-id: "{cd326d22-9b09-495b-8e7c-5238805e0377}";
+        --ws3-image: url("palette.svg");
+        --ws3-size: 15px;
+        --ws3-indicator-size: 14px;
+
+        /* Workspace 4 */
+        --ws4-id: "{ce86e7ce-a6de-4d33-895a-b56cdecab378}";
+        --ws4-image: url("clapperboard.svg");
+        --ws4-size: 15px;
+        --ws4-indicator-size: 14px;
+    }
+
+    /***** Remove default icons *****/
+    toolbarbutton[zen-workspace-id] .zen-workspace-icon,
+    .zen-current-workspace-indicator[zen-workspace-id] .zen-current-workspace-indicator-icon {
+        font-size: 0 !important;
+        background-size: contain !important;
+    }
+
+    /***** Workspace 1 *****/
+    toolbarbutton[zen-workspace-id="{dbce79d2-1247-42e3-9715-a7538ed9dc01}"] .zen-workspace-icon {
+        background-image: var(--ws1-image) !important;
+        width: var(--ws1-size) !important;
+        height: var(--ws1-size) !important;
+    }
+
+    .zen-current-workspace-indicator[zen-workspace-id="{dbce79d2-1247-42e3-9715-a7538ed9dc01}"] .zen-current-workspace-indicator-icon {
+        background-image: var(--ws1-image) !important;
+        width: var(--ws1-indicator-size) !important;
+        height: var(--ws1-indicator-size) !important;
+    }
+
+    /***** Workspace 2 *****/
+    toolbarbutton[zen-workspace-id="{d31ff3d0-7231-4b50-9041-4601e0432874}"] .zen-workspace-icon {
+        background-image: var(--ws2-image) !important;
+        width: var(--ws2-size) !important;
+        height: var(--ws2-size) !important;
+    }
+
+    .zen-current-workspace-indicator[zen-workspace-id="{d31ff3d0-7231-4b50-9041-4601e0432874}"] .zen-current-workspace-indicator-icon {
+        background-image: var(--ws2-image) !important;
+        width: var(--ws2-indicator-size) !important;
+        height: var(--ws2-indicator-size) !important;
+    }
+
+    /***** Workspace 3 *****/
+    toolbarbutton[zen-workspace-id="{cd326d22-9b09-495b-8e7c-5238805e0377}"] .zen-workspace-icon {
+        background-image: var(--ws3-image) !important;
+        width: var(--ws3-size) !important;
+        height: var(--ws3-size) !important;
+    }
+
+    .zen-current-workspace-indicator[zen-workspace-id="{cd326d22-9b09-495b-8e7c-5238805e0377}"] .zen-current-workspace-indicator-icon {
+        background-image: var(--ws3-image) !important;
+        width: var(--ws3-indicator-size) !important;
+        height: var(--ws3-indicator-size) !important;
+    }
+
+    /***** Workspace 4 *****/
+    toolbarbutton[zen-workspace-id="{ce86e7ce-a6de-4d33-895a-b56cdecab378}"] .zen-workspace-icon {
+        background-image: var(--ws4-image) !important;
+        width: var(--ws4-size) !important;
+        height: var(--ws4-size) !important;
+    }
+
+    .zen-current-workspace-indicator[zen-workspace-id="{ce86e7ce-a6de-4d33-895a-b56cdecab378}"] .zen-current-workspace-indicator-icon {
+        background-image: var(--ws4-image) !important;
+        width: var(--ws4-indicator-size) !important;
+        height: var(--ws4-indicator-size) !important;
+    }
+}

@@ -1,31 +1,35 @@
-| Config                                             |
-| -------------------------------------------------- |
-| `user.context-menu`                                |
-| `user.extension-menu`                              |
-| `user.extension-menu.grid-layout`                  |
-| `user.extension-menu.pinned`                       |
-| `user.floating-urlbar`                             |
-| `user.floating-urlbar.disable-blur`                |
-| `user.floating-urlbar.blur-browser-container-only` |
-| `user.audio-indicator`                             |
-| `user.audio-indicator.disable-dancing-tab-icon`    |
-| `user.audio-indicator.disable-better-audio-button` |
-| `user.audio-indicator.hide-in-media-controls`      |
-| `user.findbar`                                     |
-| `user.sidebar`                                     |
-| `user.hide-tabs-close-button`                      |
-| `user.hide-link-status`                            |
-| `user.hide-scroll-bar`                             |
-| `user.hide-split-highlight`                        |
-| `user.minimal-border-color`                        |
-| `user.hide-Open-All-in-Tabs-in-bookmarks`          |
-| `user.bleeding-corners-issue-fixed`                |
-| `user.hide-star-icon-in-url-suggestions`           |
-| `user.hide-search-with-google-suggestion`          |
-| `user.hide-url-permission-icon`                    |
-| `user.hide-url-container-icon`                     |
-| `user.hide-url-bookmark-icon`                      |
-| `user.hide-url-plp-icon`                           |
-| `user.add-essentials-separator`                    |
-| `user.zen-menu-button`                             |
-| `user.remove-pinned-separator`                     |
+| Config                                             | Usecase |
+| -------------------------------------------------- | ------- |
+| `user.context-menu`                                |         |
+| `user.extension-menu`                              |         |
+| `user.extension-menu.grid-layout`                  |         |
+| `user.extension-menu.pinned`                       |         |
+| `user.floating-urlbar`                             |         |
+| `user.floating-urlbar.disable-blur`                |         |
+| `user.floating-urlbar.blur-browser-container-only` |         |
+| `user.audio-indicator`                             |         |
+| `user.audio-indicator.disable-dancing-tab-icon`    |         |
+| `user.audio-indicator.disable-better-audio-button` |         |
+| `user.audio-indicator.hide-in-media-controls`      |         |
+| `user.findbar`                                     |         |
+| `user.sidebar`                                     |         |
+| `user.hide-tabs-close-button`                      |         |
+| `user.hide-link-status`                            |         |
+| `user.hide-scroll-bar`                             |         |
+| `user.hide-split-highlight`                        |         |
+| `user.minimal-border-color`                        |         |
+| `user.hide-Open-All-in-Tabs-in-bookmarks`          |         |
+| `user.bleeding-corners-issue-fixed`                |         |
+| `user.hide-star-icon-in-url-suggestions`           |         |
+| `user.hide-search-with-google-suggestion`          |         |
+| `user.hide-url-permission-icon`                    |         |
+| `user.hide-url-container-icon`                     |         |
+| `user.hide-url-bookmark-icon`                      |         |
+| `user.hide-url-plp-icon`                           |         |
+| `user.add-essentials-separator`                    |         |
+| `user.zen-menu-button`                             |         |
+| `user.remove-pinned-separator`                     |         |
+| `user.hide-workspace-indicator`                    |         |
+| `user.workspace-custom-icons`                      |         |
+| `user.floating-toolbar`                            |         |
+| `user.borderless-container`                        |         |
