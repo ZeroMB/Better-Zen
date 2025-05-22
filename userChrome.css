@@ -17,7 +17,7 @@
 ***/
 @media (-moz-pref("user.hide-tabs-close-button")) {
 
-    #vertical-pinned-tabs-container .tab-close-button,
+    .zen-workspace-pinned-tabs-section .tab-close-button,
     #tabbrowser-tabs .tabbrowser-tab:is([pinned]):is([visuallyselected]):not(:hover) .tab-reset-button,
     #tabbrowser-tabs .tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover) .tab-close-button {
         display: none !important;
@@ -188,7 +188,7 @@
     Hide Workspace Indicator
 ***/
 @media (-moz-pref("user.hide-workspace-indicator")) {
-    #zen-current-workspace-indicator-container {
+    .zen-current-workspace-indicator {
         display: none !important;
     }
 
@@ -205,8 +205,8 @@
         content: '';
         position: absolute;
         bottom: 0;
-        left: 2%;
-        width: 96%;
+        left: 3%;
+        width: 94%;
         height: 1px;
         background: light-dark(rgba(1, 1, 1, 0.075), rgba(255, 255, 255, 0.1));
     }

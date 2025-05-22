@@ -40,6 +40,9 @@ NOTE:
     /***** Workspace 1 *****/
     toolbarbutton[zen-workspace-id="{dbce79d2-1247-42e3-9715-a7538ed9dc01}"] .zen-workspace-icon {
         background-image: var(--ws1-image) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        margin: 0 !important;
         width: var(--ws1-size) !important;
         height: var(--ws1-size) !important;
     }
@@ -53,6 +56,9 @@ NOTE:
     /***** Workspace 2 *****/
     toolbarbutton[zen-workspace-id="{d31ff3d0-7231-4b50-9041-4601e0432874}"] .zen-workspace-icon {
         background-image: var(--ws2-image) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        margin: 0 !important;
         width: var(--ws2-size) !important;
         height: var(--ws2-size) !important;
     }
@@ -66,6 +72,9 @@ NOTE:
     /***** Workspace 3 *****/
     toolbarbutton[zen-workspace-id="{cd326d22-9b09-495b-8e7c-5238805e0377}"] .zen-workspace-icon {
         background-image: var(--ws3-image) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        margin: 0 !important;
         width: var(--ws3-size) !important;
         height: var(--ws3-size) !important;
     }
@@ -79,6 +88,9 @@ NOTE:
     /***** Workspace 4 *****/
     toolbarbutton[zen-workspace-id="{ce86e7ce-a6de-4d33-895a-b56cdecab378}"] .zen-workspace-icon {
         background-image: var(--ws4-image) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        margin: 0 !important;
         width: var(--ws4-size) !important;
         height: var(--ws4-size) !important;
     }
