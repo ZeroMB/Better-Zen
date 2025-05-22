@@ -147,7 +147,7 @@
         position: relative;
     }
 
-    #zen-appcontent-navbar-container {
+    #zen-appcontent-navbar-wrapper {
         position: absolute;
         width: 100% !important;
         backdrop-filter: blur(100px) !important;
@@ -167,7 +167,7 @@
         position: relative;
     }
 
-    #zen-appcontent-navbar-container {
+    #zen-appcontent-navbar-wrapper {
         position: absolute;
         width: 100% !important;
         backdrop-filter: blur(100px) !important;
