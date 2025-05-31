@@ -159,6 +159,17 @@
             padding-top: 8px;
         }
     }
+    
+    @media screen and (display-mode: fullscreen) {
+        #zen-tabbox-wrapper {
+            margin: 0 !important;
+        }
+        
+        .browserSidebarContainer {
+            border-radius: 0px !important;
+            box-shadow: none !important;
+        }
+    }
 }
 
 /***
