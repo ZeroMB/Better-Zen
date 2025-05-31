@@ -154,8 +154,10 @@
         background: var(--zen-main-browser-background) !important;
     }
 
-    #zen-tabbox-wrapper {
-        padding-top: 8px;
+    @media not screen and (display-mode: fullscreen) {
+        #zen-tabbox-wrapper {
+            padding-top: 8px;
+        }
     }
 }
 
