@@ -2,6 +2,8 @@
 
 A collection of Zen Browser configuration flags and CSS customizations to enhance your browsing experience with improved UI, functionality, and performance optimizations.
 
+![Preview](https://github.com/user-attachments/assets/f38230a7-09e2-439e-88e8-57b41c351d76)
+
 ## Features
 
 - 🎨 Custom CSS styling support with advanced UI modifications
