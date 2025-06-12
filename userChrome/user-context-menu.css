@@ -1,6 +1,7 @@
 @media (-moz-pref("user.context-menu")) {
 
-    #tabContextMenu:has(#context_duplicateTab:not([hidden])
+    /* Horizontal icons */
+    /* #tabContextMenu:has(#context_duplicateTab:not([hidden])
     ):has(:is(#context_zen-add-essential, #context_zen-remove-essential):not([hidden])
     ):has(:is(#context_pinTab, #context_unpinTab, #context_bookmarkTab):not([hidden])) {
         :nth-child(1 of menuseparator) {
@@ -44,7 +45,7 @@
             margin-left: 0% !important;
             margin-top: calc(0px - var(--height)) !important;
         }
-    }
+    } */
 
     /* Fixed width */
     #tabContextMenu {
@@ -54,28 +55,24 @@
     menuseparator {
 
         /* Hide first separator */
-        &:first-of-type {
+        /* &:first-of-type {
             display: none !important;
-        }
+        } */
 
         /* Reduce separator opacity */
         &::before {
-            opacity: 0.3;
+            opacity: 0.5;
         }
     }
 
 
     /* Hide Container icons */
+    #context_reopenInContainerPopupMenu,
+    #context-zen-change-workspace-tab-menu-popup,
     #new-tab-button-popup,
-    #context_reopenInContainer,
-    #context-openlinkinusercontext-popup,
     .new-tab-popup {
-        .menu-iconic-left {
+        .menu-icon {
             display: none !important;
-        }
-
-        .menu-iconic-text {
-            padding: 0 !important;
         }
 
         menuseparator:before {
@@ -87,7 +84,6 @@
         }
 
         menuitem[label="No Container"] {
-            padding-left: 5px !important;
             order: 1 !important;
         }
 
@@ -97,22 +93,16 @@
         }
     }
     
-    .new-tab-popup {
-        .menu-iconic-text {
-            margin-left: -8px !important;
-        }
-    }
-    
     
     /* Hide context menu separator */
-    #context_selectAllTabs + menuseparator::before,
+    /* #context_selectAllTabs + menuseparator::before,
     #context_ungroupTab + menuseparator::before {
         display: none !important;
-    }
+    } */
 
     /* Remove context menu separator gap */
-    #context_selectAllTabs + menuseparator,
+    /* #context_selectAllTabs + menuseparator,
     #context_ungroupTab + menuseparator {
         padding-block: 0.5px !important;
-    }
+    } */
 }
