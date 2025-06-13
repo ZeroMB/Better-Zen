@@ -104,7 +104,7 @@
     @media not (-moz-pref("user.audio-indicator.disable-better-audio-button")) {
 
         /* Hide tab icon only when hover in regular tab */
-        .tab-icon-stack {
+        /* .tab-icon-stack {
             &:not([crashed]) {
                 &:is([soundplaying], [muted], [activemedia-blocked]) {
                     opacity: 1 !important;
@@ -112,7 +112,7 @@
                     transition: opacity 0.3s ease-out !important;
                 }
             }
-        }
+        } */
 
         .tab-stack:hover {
             .tab-icon-stack {
