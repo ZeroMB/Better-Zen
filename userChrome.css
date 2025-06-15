@@ -252,7 +252,8 @@
 ***/
 @media (-moz-pref("user.more")) {
     /* Toolbar History Pannel */
-    #customizationui-widget-panel #customizationui-widget-multiview #PanelUI-history {
+    #customizationui-widget-multiview[mainViewId="PanelUI-history"],
+    #PanelUI-history {
         width: 20vw;
         height: 70vh;
     }
