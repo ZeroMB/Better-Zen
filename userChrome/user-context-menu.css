@@ -88,6 +88,7 @@
         }
 
         menuitem[label="Facebook"],
+        menuitem[label="Google"],
         menuitem[label="Manage containers"] {
             display: none !important;
         }
