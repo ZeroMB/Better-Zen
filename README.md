@@ -82,7 +82,7 @@ Set these flags in `about:config`:
 
 | Config | Value | Usecase |
 |--------|-------|---------|
-| `zen.view.compact.toolbar-hide-after-hover.duration` | `150` | Toolbar hover duration in milliseconds |
+| `zen.view.compact.toolbar-hide-after-hover.duration` | `100` | Toolbar hover duration in milliseconds |
 | `zen.view.grey-out-inactive-windows` | `false` | Prevent theme color change when window loses focus |
 | `zen.urlbar.replace-newtab` | `false` | Maintain normal 'New tab' behavior |
 | `zen.workspaces.open-new-tab-if-last-unpinned-tab-is-closed` | `true` | Open new tab when last unpinned tab is closed |
