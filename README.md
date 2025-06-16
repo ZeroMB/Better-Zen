@@ -1,6 +1,6 @@
 # Better Zen Browser
 
-A collection of Zen Browser configuration flags and CSS customizations to enhance your browsing experience with improved UI, functionality, and performance optimizations.
+A collection of [Zen Browser](https://zen-browser.app) configuration flags and CSS customizations to enhance your browsing experience with improved UI, functionality, and performance optimizations.
 
 ![Preview](https://github.com/user-attachments/assets/f38230a7-09e2-439e-88e8-57b41c351d76)
 
