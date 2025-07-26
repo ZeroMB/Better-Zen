@@ -1,37 +1,8 @@
 @media (-moz-pref("user.sidebar")) {
 
-    /* Remove dotted active border */
-    :root {
-        --default-focusring: none !important;
-    }
-
-    /* Change panel color */
-    .sidebar-panel {
-        background-color: var(--zen-themed-toolbar-bg) !important;
-    }
-
-    /* Change 'Synced Tabs' color */
-    html body div.content-container {
-        background-color: #171717 !important;
-    }
-
-    /* Design search box */
-    search-textbox {
-        appearance: none !important;
-        background-color: transparent !important;
-        border: 1px solid var(--zen-colors-border) !important;
-        padding: 0.5rem !important;
-        border-radius: 5px !important;
-    }
-
-    /* Remove separator */
-    #sidebar-box #sidebar-header {
-        border-bottom: none !important;
-    }
-
     /* Floating sidebar */
     #sidebar-box {
-        background-color: var(--zen-themed-toolbar-bg) !important;
+        background: var(--zen-main-browser-background-toolbar) !important;
         border: 1px solid var(--zen-colors-border) !important;
         padding: var(--zen-toolbox-padding) !important;
         position: fixed;
@@ -40,18 +11,59 @@
         width: 20em !important;
         top: 10vh !important;
         right: 0.6vw !important;
-        animation: sidebar 0.2s ease-in-out !important;
+        transform: translateX(0);
+        transition: transform 0.35s !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
-    @keyframes sidebar {
-        0% {
-            opacity: 0;
-            transform: translateX(150px);
-        }
+    #sidebar-box[hidden="true"] {
+        display: flex !important;
+        transform: translateX(110%) !important;
+    }
 
-        100% {
-            opacity: 1;
-            transform: translateX(0);
+    @starting-style {
+        #sidebar-box {
+            display: flex !important;
+            transform: translateX(110%) !important;
         }
+    }
+
+    search-textbox {
+        appearance: none !important;
+        background: transparent !important;
+        border: 1px solid var(--zen-colors-border) !important;
+        padding: 0.5rem !important;
+        border-radius: 5px !important;
+    }
+
+    #viewButton {
+        background: transparent !important;
+        border: 1px solid var(--zen-colors-border) !important;
+    }
+
+    #search-box:focus {
+        outline: none !important;
+    }
+
+    html body div.content-container {
+        background: #171717 !important;
+    }
+
+    :root {
+        --default-focusring: none !important;
+    }
+
+    #sidebar-box #sidebar-header {
+        border-bottom: none !important;
+    }
+
+    /* Prevent shake glitch */
+    #sidebar-box+splitter {
+        display: none !important;
+    }
+
+    #tabbrowser-tabbox {
+        will-change: unset !important;
     }
 }
