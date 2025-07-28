@@ -42,6 +42,10 @@ Create and configure these custom flags in `about:config`:
 | Config | Value | Usecase |
 |--------|-------|---------|
 | `user.context-menu` | `true` | Enhanced context menu styling and functionality |
+| `user.context-menu.hide-items` | `true` | Hide context menu items |
+| `user.context-menu.hide-icons` | `true` | Hide context menu icons |
+| `user.context-menu.disable-horizontal-items` | `true` | Disable context menu horizontal items |
+| `user.context-menu.enable-container-icons` | `true` | Enable container icons |
 | `user.extension-menu` | `true` | Improved extension menu appearance |
 | `user.extension-menu.grid-layout` | `true` | Grid layout for extension menu items |
 | `user.extension-menu.pinned` | `true` | Pin frequently used extensions in menu |
