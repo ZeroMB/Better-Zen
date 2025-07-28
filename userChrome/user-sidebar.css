@@ -5,6 +5,12 @@
     #sidebar {
         background-color: var(--zen-main-browser-background-toolbar) !important;
     }
+    
+    #input {
+        background-color: transparent !important;
+        outline: none !important;
+        border-color: var(--zen-colors-border) !important;
+    }
 
     /* Floating sidebar */
     #sidebar-box {
