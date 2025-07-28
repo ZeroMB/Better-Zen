@@ -1,4 +1,10 @@
 @media (-moz-pref("user.sidebar")) {
+    
+    #sidebar-main,
+    #sidebar-header,
+    #sidebar {
+        background-color: var(--zen-main-browser-background-toolbar) !important;
+    }
 
     /* Floating sidebar */
     #sidebar-box {
