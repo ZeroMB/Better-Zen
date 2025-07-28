@@ -147,19 +147,39 @@
         }
 
         /* Add margin for non-iconic items */
-        #tabContextMenu>menuitem:not(.menuitem-iconic,
-            [type='checkbox'],
-            [type='radio'],
-            .in-menulist,
-            .in-menulist menuitem,
-            .unified-nav-current)>.menu-text,
-        #tabContextMenu>menu:not(.menu-iconic,
-            [type='checkbox'],
-            [type='radio'],
-            .in-menulist,
-            .in-menulist menu,
-            .unified-nav-current)>.menu-text {
-            margin-left: var(--zen-context-menu-icon-margin) !important;
+        #tabContextMenu > menuitem:not(
+          .menuitem-iconic,
+          [type='checkbox'],
+          [type='radio'],
+          .in-menulist,
+          .in-menulist menuitem,
+          .unified-nav-current
+        ) > .menu-text,
+        #tabContextMenu > menu:not(
+          .menu-iconic,
+          [type='checkbox'],
+          [type='radio'],
+          .in-menulist,
+          .in-menulist menu,
+          .unified-nav-current
+        ) > .menu-text,
+        #contentAreaContextMenu > menuitem:not(
+          .menuitem-iconic,
+          [type='checkbox'],
+          [type='radio'],
+          .in-menulist,
+          .in-menulist menuitem,
+          .unified-nav-current
+        ) > .menu-text,
+        #contentAreaContextMenu > menu:not(
+          .menu-iconic,
+          [type='checkbox'],
+          [type='radio'],
+          .in-menulist,
+          .in-menulist menu,
+          .unified-nav-current
+        ) > .menu-text {
+          margin-left: var(--zen-context-menu-icon-margin) !important;
         }
 
         /* Base icon styles for menu items */
