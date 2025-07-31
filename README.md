@@ -78,6 +78,7 @@ Create and configure these custom flags in `about:config`:
 | `user.workspace-custom-icons` | `true` | Use custom icons for workspaces |
 | `user.floating-toolbar` | `true` | Enable floating toolbar design |
 | `user.borderless-container` | `true` | Remove borders from container elements |
+| `user.tab-loading-bar` | `true` | Add tab loading bar |
 | `user.more` | `true` | Small UI Improvements |
 
 ### Step 4: Browser Configuration
